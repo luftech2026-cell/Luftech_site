@@ -1,10 +1,12 @@
 import BrandLogo from "../components/brand-logo";
 import SiteLink from "../components/site-link";
 import {
+  companyAddress,
   companyDetails,
   companyStatusNote,
   contactChannels,
   footerColumns,
+  instagramProfile,
   responseCommitments,
   services,
   siteIdentity,
@@ -221,6 +223,18 @@ export default function Home() {
                     </a>
                   </div>
 
+                  <div className="contact-socials">
+                    <a
+                      href={instagramProfile.href}
+                      className="contact-socials__link"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className="fa fa-instagram" />
+                      <span>{instagramProfile.label}</span>
+                    </a>
+                  </div>
+
                   <p className="contact-legal-note">
                     Contattandoci confermi di aver letto la{" "}
                     <SiteLink href="/privacy">Privacy Policy</SiteLink>, la{" "}
@@ -261,7 +275,7 @@ export default function Home() {
 
                 <div className="contact-tab__panel">
                   <span className="contact-tab__panel-label">Sede</span>
-                  <strong>Italia</strong>
+                  <strong>{companyAddress}</strong>
                 </div>
 
                 <div className="contact-tab__panel">
