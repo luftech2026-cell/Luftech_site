@@ -4,3 +4,4 @@ npm-debug.log*
 logs
 test-results
 tmp
+gcm-diagnose.log

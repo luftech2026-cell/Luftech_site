@@ -24,7 +24,7 @@ body {
   z-index: 0;
   overflow: hidden;
   pointer-events: none;
-  opacity: 0.92;
+  opacity: 1;
 }
 
 .site-spline-background__fallback,
@@ -37,14 +37,14 @@ body {
 
 .site-spline-background__fallback {
   background:
-    radial-gradient(circle at 18% 18%, rgba(104, 204, 152, 0.3), transparent 22%),
-    radial-gradient(circle at 78% 26%, rgba(51, 155, 158, 0.28), transparent 26%),
-    radial-gradient(circle at 50% 72%, rgba(30, 70, 120, 0.2), transparent 32%),
-    linear-gradient(180deg, rgba(7, 17, 29, 0.96), rgba(9, 23, 41, 0.84));
+    radial-gradient(circle at 18% 18%, rgba(104, 204, 152, 0.2), transparent 22%),
+    radial-gradient(circle at 78% 26%, rgba(51, 155, 158, 0.18), transparent 26%),
+    radial-gradient(circle at 50% 72%, rgba(30, 70, 120, 0.12), transparent 32%),
+    linear-gradient(180deg, rgba(7, 17, 29, 0.68), rgba(9, 23, 41, 0.5));
 }
 
 .site-spline-background__viewer {
   display: block;
-  filter: saturate(1.06) brightness(0.96);
+  filter: none;
   transform: scale(1.02);
 }
