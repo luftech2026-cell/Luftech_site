@@ -34,7 +34,7 @@ export default function BrandLogo({
   return (
     <span className={`brand-logo brand-logo--${variant} ${className}`.trim()}>
       <Image
-        src="/images/luftech-logo.png"
+        src="/iamges/Gemini_Generated_Image_kb6x6akb6x6akb6x.png"
         alt={siteIdentity.brandName}
         width={dimensions.width}
         height={dimensions.height}
