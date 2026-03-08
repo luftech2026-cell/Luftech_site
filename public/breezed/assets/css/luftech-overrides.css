@@ -920,6 +920,104 @@
   line-height: 24px;
 }
 
+@media (max-width: 767px) {
+  .luftech-page .header-area {
+    top: 12px;
+    width: calc(100vw - 18px);
+    max-width: 420px;
+    height: auto;
+    margin-left: 0;
+    transform: translateX(-50%);
+  }
+
+  .luftech-page .header-area::after {
+    left: 14px;
+    right: 14px;
+    bottom: -14px;
+    height: 24px;
+  }
+
+  .luftech-page .header-area .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 68px;
+    padding: 10px 12px;
+    overflow: visible;
+  }
+
+  .luftech-page .header-area .main-nav .logo,
+  .luftech-page .header-area .main-nav .menu-trigger {
+    display: none !important;
+  }
+
+  .luftech-page .header-area .main-nav .nav,
+  .luftech-page .header-area.header-sticky .nav {
+    float: none;
+    display: flex !important;
+    width: auto;
+    margin: 0 !important;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+  }
+
+  .luftech-page .header-area .main-nav .nav li {
+    width: auto;
+    margin: 0;
+    padding: 0 !important;
+    border: 0;
+    background: transparent;
+  }
+
+  .luftech-page .header-area .main-nav .nav li.mobile-nav-hidden {
+    display: none !important;
+  }
+
+  .luftech-page .header-area .main-nav .nav li.mobile-nav-visible {
+    display: block !important;
+  }
+
+  .luftech-page .header-area .main-nav .nav li a,
+  .luftech-page .header-area.header-sticky .nav li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: auto !important;
+    min-height: 0;
+    line-height: 1 !important;
+    padding: 10px 14px !important;
+    border: 1px solid rgba(127, 226, 191, 0.18) !important;
+    border-radius: 999px;
+    background: rgba(8, 19, 34, 0.2) !important;
+    color: #7fe2bf !important;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 1 !important;
+    white-space: nowrap;
+  }
+
+  .luftech-page .header-area .main-nav .nav li a:hover,
+  .luftech-page .header-area .main-nav .nav li a.active,
+  .luftech-page .header-area.header-sticky .nav li a:hover,
+  .luftech-page .header-area.header-sticky .nav li a.active {
+    background: rgba(8, 19, 34, 0.28) !important;
+    color: #7fe2bf !important;
+    opacity: 1 !important;
+  }
+
+  .luftech-page .header-area .main-nav .nav li.header-cta-item a {
+    min-width: 0;
+    background: rgba(51, 155, 158, 0.18) !important;
+    border-color: rgba(104, 204, 152, 0.28) !important;
+    color: #7fe2bf !important;
+    box-shadow: none;
+  }
+}
+
 .luftech-page .contact-tab__copyright strong {
   font-size: 14px;
   letter-spacing: 0.08em;

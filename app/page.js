@@ -29,21 +29,21 @@ export default function Home() {
                   </a>
 
                   <ul className="nav">
-                    <li className="scroll-to-section">
+                    <li className="scroll-to-section mobile-nav-hidden">
                       <a href="#top" className="active">
                         Home
                       </a>
                     </li>
-                    <li className="scroll-to-section">
+                    <li className="scroll-to-section mobile-nav-hidden">
                       <a href="#about">Chi siamo</a>
                     </li>
-                    <li className="scroll-to-section">
+                    <li className="scroll-to-section mobile-nav-hidden">
                       <a href="#services">Servizi</a>
                     </li>
-                    <li className="scroll-to-section">
+                    <li className="scroll-to-section mobile-nav-visible">
                       <a href="#contact-us">Contatti</a>
                     </li>
-                    <li className="scroll-to-section header-cta-item">
+                    <li className="scroll-to-section header-cta-item mobile-nav-visible">
                       <a href={whatsappLink} target="_blank" rel="noreferrer">
                         WhatsApp
                       </a>
