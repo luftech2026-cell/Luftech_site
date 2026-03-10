@@ -15,6 +15,7 @@ import {
 
 export default function Home() {
   const currentYear = new Date().getFullYear();
+  const vatNumber = companyDetails.find((detail) => detail.label === "P. IVA")?.value;
 
   return (
     <main className="luftech-page">
@@ -316,6 +317,11 @@ export default function Home() {
                 <span className="contact-tab__copyright">
                   <strong>{siteIdentity.siteLabel}</strong>
                   <span>&copy; {currentYear}</span>
+                  {vatNumber ? (
+                    <span className="contact-tab__copyright-meta">
+                      P. IVA {vatNumber}
+                    </span>
+                  ) : null}
                 </span>
                 <div className="contact-tab__bottom-links">
                   <SiteLink href="/privacy">Privacy</SiteLink>
@@ -327,6 +333,15 @@ export default function Home() {
           </div>
         </section>
       </div>
+      <a
+        href={whatsappLink}
+        className="floating-whatsapp-button"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Scrivici su WhatsApp"
+      >
+        <i className="fa fa-whatsapp" />
+      </a>
     </main>
   );
 }

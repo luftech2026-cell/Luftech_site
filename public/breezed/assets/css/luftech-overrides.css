@@ -616,6 +616,15 @@
   display: inline-flex;
   align-items: center;
   gap: 12px;
+  flex-wrap: wrap;
+}
+
+.luftech-page .contact-tab__copyright-meta {
+  color: var(--ink-muted);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .luftech-page .brand-logo--footer img {
@@ -920,7 +929,46 @@
   line-height: 24px;
 }
 
+.luftech-page .floating-whatsapp-button {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 140;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #1fa463 0%, #44d47c 100%);
+  color: #ffffff;
+  box-shadow:
+    0 18px 36px rgba(2, 18, 12, 0.34),
+    0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.luftech-page .floating-whatsapp-button:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.luftech-page .floating-whatsapp-button i {
+  font-size: 34px;
+  line-height: 1;
+}
+
 @media (max-width: 767px) {
+  .luftech-page .floating-whatsapp-button {
+    right: 16px;
+    bottom: 16px;
+    width: 56px;
+    height: 56px;
+  }
+
+  .luftech-page .floating-whatsapp-button i {
+    font-size: 30px;
+  }
+
   .luftech-page .header-area {
     top: 12px;
     width: calc(100vw - 18px);
