@@ -8,10 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
-    "@splinetool/react-spline": "4.1.0",
-    "@splinetool/runtime": "^1.12.67",
-    "next": "16.1.6",
+    "next": "16.2.9",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
+  },
+  "overrides": {
+    "postcss": "8.5.10"
   }
 }

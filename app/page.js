@@ -78,11 +78,6 @@ export default function Home() {
             <div className="hero-spline-frame" aria-hidden="true">
               <div className="hero-spline-shell">
                 <div className="hero-spline-shell__fallback" />
-                <spline-viewer
-                  className="hero-spline-shell__viewer"
-                  url={siteIdentity.heroScene}
-                  loading="eager"
-                />
               </div>
             </div>
 
@@ -129,6 +124,41 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="section luftech-showcase" id="progetti">
+          <div className="container">
+            <article className="showcase-card">
+              <div className="showcase-card__copy">
+                <div className="section-heading">
+                  <h6>Progetto sviluppato</h6>
+                  <h2>Abbiamo sviluppato Infissi360.</h2>
+                </div>
+                <p>
+                  Infissi360 e un progetto web realizzato da Lufcore per
+                  presentare servizi, offerte e contatti in modo piu chiaro,
+                  rapido e orientato alla conversione.
+                </p>
+                <p>
+                  La struttura e stata pensata per aiutare il brand a farsi
+                  trovare meglio online e trasformare il traffico in richieste
+                  reali.
+                </p>
+              </div>
+
+              <div className="showcase-card__actions">
+                <span className="showcase-card__label">Sito online</span>
+                <a
+                  href="https://www.infissi360.com"
+                  className="showcase-card__link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  www.infissi360.com
+                </a>
+              </div>
+            </article>
           </div>
         </section>
 
@@ -237,10 +267,10 @@ export default function Home() {
                   </div>
 
                   <p className="contact-legal-note">
-                    Contattandoci confermi di aver letto la{" "}
-                    <SiteLink href="/privacy">Privacy Policy</SiteLink>, la{" "}
-                    <SiteLink href="/cookie">Cookie Policy</SiteLink> e i{" "}
-                    <SiteLink href="/termini">Termini di utilizzo</SiteLink>.
+                    Prima di inviare dati personali consulta la{" "}
+                    <SiteLink href="/privacy">Privacy Policy</SiteLink>. Il sito
+                    non utilizza cookie di analytics o marketing: maggiori
+                    informazioni nella <SiteLink href="/cookie">Cookie Policy</SiteLink>.
                   </p>
                 </div>
               </div>

@@ -1,0 +1,5 @@
+Contact: mailto:assistenza@lufcore.it
+Preferred-Languages: it, en
+Canonical: https://www.lufcore.it/.well-known/security.txt
+Policy: https://www.lufcore.it/termini
+Expires: 2027-06-22T00:00:00.000Z
