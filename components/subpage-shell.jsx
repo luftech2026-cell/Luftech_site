@@ -49,10 +49,10 @@ export default function SubpageShell({
           <div className="subpage-footer__cta">
             <div>
               <p className="subpage-footer__eyebrow">{siteIdentity.siteLabel}</p>
-              <h2>Se vuoi, il prossimo passo e parlarne con noi.</h2>
+              <h2>Canali ufficiali per comunicazioni operative e tecniche.</h2>
               <p>
-                Scrivici per un confronto iniziale, una stima orientativa o una
-                proposta di lavoro piu precisa.
+                Per richieste relative a Lufcore, Infissi360 o agli asset
+                digitali gestiti, utilizza i recapiti ufficiali indicati.
               </p>
             </div>
 
@@ -63,7 +63,7 @@ export default function SubpageShell({
                 target="_blank"
                 rel="noreferrer"
               >
-                Scrivici su WhatsApp
+                Contatta Lufcore
               </SiteLink>
               <SiteLink href="/#contact-us" className="main-stroked-button dark-button">
                 Vai ai contatti

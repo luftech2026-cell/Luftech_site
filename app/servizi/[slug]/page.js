@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
 
   if (!service) {
     return {
-      title: "Servizio | Lufcore",
+      title: "Capacita operativa | Lufcore",
     };
   }
 

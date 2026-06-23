@@ -7,18 +7,18 @@ import {
 } from "../../lib/site-content";
 
 export const metadata = {
-  title: "Servizi | Lufcore",
+  title: "Capacita tecnologiche | Lufcore",
   description:
-    "Panoramica dei servizi Lufcore: siti web, gestionali e web app costruiti intorno al lavoro reale.",
+    "Capacita operative Lufcore: AI applicata, automazioni, dati, ecosistemi digitali, piattaforme e integrazioni.",
 };
 
 export default function ServicesPage() {
   return (
     <SubpageShell
-      eyebrow="Servizi"
-      title="Cosa possiamo costruire per te"
-      intro="Lavoriamo su siti web, gestionali, web app, automazioni e integrazioni con una logica semplice: capire il flusso reale, ridurre attrito e consegnare strumenti usabili."
-      summary="Qui trovi una panoramica dei servizi principali e del metodo con cui li sviluppiamo."
+      eyebrow="Capacita tecnologiche"
+      title="Le aree operative su cui Lufcore costruisce sistemi digitali"
+      intro="Lufcore lavora su ecosistemi digitali, automazioni, piattaforme, dati e integrazioni con una logica precisa: leggere il processo reale, aumentare controllo e trasformare la tecnologia in vantaggio operativo."
+      summary="Questa sezione descrive le capacita tecniche che sostengono gli asset gestiti da Lufcore, incluso Infissi360."
     >
       <article className="services-overview">
         <section className="services-overview__stats">
@@ -43,13 +43,13 @@ export default function ServicesPage() {
                   <li key={item}>{item}</li>
                 ))}
               </ul>
-              <SiteLink href={`/servizi/${service.slug}`}>Apri servizio</SiteLink>
+              <SiteLink href={`/servizi/${service.slug}`}>Apri capacita</SiteLink>
             </article>
           ))}
         </section>
 
         <section className="services-overview__process">
-          <h2>Metodo di lavoro</h2>
+          <h2>Metodo operativo</h2>
           <div className="services-overview__process-grid">
             {serviceProcess.map((step) => (
               <article className="service-process-card" key={step.title}>

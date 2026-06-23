@@ -40,14 +40,14 @@ export default function Home() {
                       <a href="#about">Chi siamo</a>
                     </li>
                     <li className="scroll-to-section mobile-nav-hidden">
-                      <a href="#services">Servizi</a>
+                      <a href="#services">Tecnologia</a>
                     </li>
                     <li className="scroll-to-section mobile-nav-visible">
                       <a href="#contact-us">Contatti</a>
                     </li>
                     <li className="scroll-to-section header-cta-item mobile-nav-visible">
                       <a href={whatsappLink} target="_blank" rel="noreferrer">
-                        WhatsApp
+                        Contatta Lufcore
                       </a>
                     </li>
                   </ul>
@@ -79,11 +79,13 @@ export default function Home() {
             <div className="hero-spline-frame">
               <div className="hero-spline-shell">
                 <div className="hero-spline-shell__fallback" />
+                <div className="hero-spline-label" aria-hidden="true">
+                  <span>Lufcore</span>
+                  <strong>Intelligenza operativa per ecosistemi digitali reali</strong>
+                </div>
                 <SplineScene
                   scene="/spline/hero.splinecode"
                   className="hero-spline-shell__viewer"
-                  label="hero.splinecode"
-                  showControl
                 />
               </div>
             </div>
@@ -95,7 +97,7 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Scrivici su WhatsApp
+                Contatta Lufcore
               </a>
               <a href="#contact-us" className="main-stroked-button dark-button">
                 Contatti
@@ -110,23 +112,27 @@ export default function Home() {
               <div className="col-lg-6 col-md-12">
                 <div className="section-heading">
                   <h6>Chi siamo</h6>
-                  <h2>Creiamo strumenti digitali semplici, ordinati e utili.</h2>
+                  <h2>Lufcore costruisce sistemi digitali dove tecnologia e operativita si incontrano.</h2>
                 </div>
               </div>
 
               <div className="col-lg-6 col-md-12">
                 <div className="about-text">
                   <p>
-                    Sviluppiamo siti web, gestionali e web app su misura per chi
-                    cerca una soluzione concreta e non qualcosa di generico.
+                    Lufcore nasce per progettare e governare soluzioni digitali
+                    orientate all'efficienza reale: automazioni, piattaforme
+                    verticali, processi interni e strumenti tecnologici pensati
+                    per ridurre attrito operativo.
                   </p>
                   <p>
-                    Lavoriamo con un obiettivo chiaro: rendere il tuo progetto
-                    piu forte online e il tuo lavoro piu fluido ogni giorno.
+                    Il focus non e produrre software generico, ma creare sistemi
+                    capaci di sostenere asset concreti, misurabili e scalabili,
+                    con una base tecnica ordinata e una direzione operativa chiara.
                   </p>
                   <p className="about-text__note">
-                    Ogni progetto parte da un caso reale: capire il flusso,
-                    togliere attrito, costruire solo quello che serve davvero.
+                    Infissi360 rappresenta oggi il primo asset operativo gestito
+                    da Lufcore: un progetto verticale dove tecnologia, processo
+                    commerciale e automazione convergono in un unico ecosistema.
                   </p>
                 </div>
               </div>
@@ -139,23 +145,24 @@ export default function Home() {
             <article className="showcase-card">
               <div className="showcase-card__copy">
                 <div className="section-heading">
-                  <h6>Progetto sviluppato</h6>
-                  <h2>Abbiamo sviluppato Infissi360.</h2>
+                  <h6>Asset operativo</h6>
+                  <h2>Infissi360 e il primo ecosistema verticale gestito da Lufcore.</h2>
                 </div>
                 <p>
-                  Infissi360 e un progetto web realizzato da Lufcore per
-                  presentare servizi, offerte e contatti in modo piu chiaro,
-                  rapido e orientato alla conversione.
+                  Infissi360 opera nel settore serramenti ed e coordinato da
+                  Lufcore come ambiente reale di evoluzione digitale: presenza
+                  online, acquisizione, gestione contatti, flussi operativi e
+                  automazioni vengono integrati in una struttura progressiva.
                 </p>
                 <p>
-                  La struttura e stata pensata per aiutare il brand a farsi
-                  trovare meglio online e trasformare il traffico in richieste
-                  reali.
+                  Il progetto permette di validare sul campo soluzioni applicate
+                  a marketing operativo, organizzazione dei dati, controllo dei
+                  processi e miglioramento continuo dell'esperienza.
                 </p>
               </div>
 
               <div className="showcase-card__actions">
-                <span className="showcase-card__label">Sito online</span>
+                <span className="showcase-card__label">Asset online</span>
                 <a
                   href="https://www.infissi360.com"
                   className="showcase-card__link"
@@ -172,8 +179,8 @@ export default function Home() {
         <section className="section luftech-services" id="services">
           <div className="container">
             <div className="section-heading section-center">
-              <h6>Servizi</h6>
-              <h2>Cosa possiamo sviluppare per te</h2>
+              <h6>Capacita tecnologiche</h6>
+              <h2>Le aree su cui Lufcore costruisce e governa sistemi digitali</h2>
             </div>
 
             <div className="row">
@@ -193,7 +200,7 @@ export default function Home() {
                     <div className="service-box__footer">
                       <span>{service.idealFor}</span>
                       <SiteLink href={`/servizi/${service.slug}`}>
-                        Approfondisci
+                        Apri capacita
                       </SiteLink>
                     </div>
                   </article>
@@ -203,7 +210,7 @@ export default function Home() {
 
             <div className="services-inline-link">
               <SiteLink href="/servizi">
-                Apri la panoramica completa dei servizi
+                Apri la panoramica delle capacita operative
               </SiteLink>
             </div>
           </div>
@@ -215,12 +222,13 @@ export default function Home() {
               <div className="col-lg-5 col-md-12">
                 <div className="section-heading">
                   <h6>Contatti</h6>
-                  <h2>Scrivici o chiamaci direttamente.</h2>
+                  <h2>Canali ufficiali Lufcore.</h2>
                 </div>
 
                 <p className="contact-intro">
-                  Se hai bisogno di un sito, un gestionale o una web app, puoi
-                  contattarci subito qui.
+                  Per comunicazioni operative, amministrative o richieste
+                  relative ai progetti gestiti da Lufcore, puoi utilizzare i
+                  canali ufficiali indicati.
                 </p>
 
                 <div className="contact-commitments">
@@ -254,7 +262,7 @@ export default function Home() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Scrivici su WhatsApp <i className="fa fa-arrow-right" />
+                      Contatta Lufcore <i className="fa fa-arrow-right" />
                     </a>
                     <a href="tel:+393793547052" className="main-button-icon ghost-action">
                       Chiama ora
@@ -289,8 +297,9 @@ export default function Home() {
                   <BrandLogo variant="section" />
                 </div>
                 <p>
-                  Siti web, gestionali e web app sviluppati per aziende,
-                  professionisti e attivita che cercano una soluzione concreta.
+                  Lufcore sviluppa e governa progetti digitali, automazioni e
+                  infrastrutture operative. Oggi coordina l'evoluzione
+                  tecnologica di Infissi360.
                 </p>
                 <p className="contact-tab__status-note">{companyStatusNote}</p>
 
@@ -307,8 +316,8 @@ export default function Home() {
               <div className="contact-tab__directory">
                 <div className="contact-tab__panel">
                   <span className="contact-tab__panel-label">Contatti</span>
-                  <h4>Supporto rapido</h4>
-                  <p>Telefono, email operative e sede base sempre visibili.</p>
+                  <h4>Comunicazioni ufficiali</h4>
+                  <p>Telefono, email operative, amministrazione e assistenza sempre visibili.</p>
                 </div>
 
                 <div className="contact-tab__panel">
@@ -375,7 +384,7 @@ export default function Home() {
         className="floating-whatsapp-button"
         target="_blank"
         rel="noreferrer"
-        aria-label="Scrivici su WhatsApp"
+        aria-label="Contatta Lufcore su WhatsApp"
       >
         <i className="fa fa-whatsapp" />
       </a>

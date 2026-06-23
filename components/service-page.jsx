@@ -11,7 +11,7 @@ export default function ServicePage({ service }) {
 
   return (
     <SubpageShell
-      eyebrow="Servizio"
+      eyebrow="Capacita operativa"
       title={service.title}
       intro={service.shortDescription}
       summary={service.idealFor}
@@ -66,11 +66,11 @@ export default function ServicePage({ service }) {
 
         <section className="service-document__cta">
           <div>
-            <span>Vuoi capire se e il servizio giusto?</span>
-            <h2>Partiamo dal tuo caso reale, non da un pacchetto standard.</h2>
+            <span>Governare prima di costruire</span>
+            <h2>La tecnologia viene progettata intorno al processo, non intorno a soluzioni generiche.</h2>
             <p>
-              Scrivici cosa devi costruire, quali strumenti usi oggi e dove si
-              blocca il lavoro. Ti rispondiamo con una prima lettura operativa.
+              Lufcore valuta contesto, dati, vincoli e priorita operative prima
+              di introdurre nuove automazioni, interfacce o moduli digitali.
             </p>
           </div>
 
@@ -81,7 +81,7 @@ export default function ServicePage({ service }) {
               target="_blank"
               rel="noreferrer"
             >
-              Scrivici su WhatsApp
+              Contatta Lufcore
             </SiteLink>
             <SiteLink href="/#contact-us" className="main-stroked-button dark-button">
               Contatti
@@ -90,13 +90,13 @@ export default function ServicePage({ service }) {
         </section>
 
         <section className="service-document__related">
-          <h2>Altri servizi collegati</h2>
+          <h2>Altre capacita collegate</h2>
           <div className="service-document__related-grid">
             {relatedServices.map((item) => (
               <article className="service-related-card" key={item.slug}>
                 <span>{item.title}</span>
                 <p>{item.shortDescription}</p>
-                <SiteLink href={`/servizi/${item.slug}`}>Apri servizio</SiteLink>
+                <SiteLink href={`/servizi/${item.slug}`}>Apri capacita</SiteLink>
               </article>
             ))}
           </div>

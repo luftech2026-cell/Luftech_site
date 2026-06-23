@@ -7,9 +7,9 @@ export const dynamic = "force-dynamic";
 
 export const metadata = {
   metadataBase: new URL(siteIdentity.siteUrl),
-  title: "Lufcore | Siti, Gestionali e Web App",
+  title: "Lufcore | Tecnologia, AI e sistemi digitali operativi",
   description:
-    "Lufcore realizza siti web, gestionali e web app su misura. Contatti: info@lufcore.it, amministrazione@lufcore.it, assistenza@lufcore.it, +39 379 3547052.",
+    "Lufcore sviluppa e governa sistemi digitali, automazioni, flussi operativi e progetti tecnologici proprietari. Oggi coordina l'evoluzione di Infissi360.",
   icons: {
     icon: "/iamges/Gemini_Generated_Image_8yjf6o8yjf6o8yjf.png",
     shortcut: "/iamges/Gemini_Generated_Image_8yjf6o8yjf6o8yjf.png",
@@ -47,7 +47,6 @@ export default function RootLayout({ children }) {
           <SplineScene
             scene="/spline/background.splinecode"
             className="site-spline-background__viewer"
-            label="background.splinecode"
           />
         </div>
         <div className="site-shell">{children}</div>
