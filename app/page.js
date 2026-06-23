@@ -1,5 +1,6 @@
 import BrandLogo from "../components/brand-logo";
 import SiteLink from "../components/site-link";
+import SplineScene from "../components/spline-scene";
 import {
   companyAddress,
   companyDetails,
@@ -75,9 +76,15 @@ export default function Home() {
               <p className="hero-copy-text">{siteIdentity.heroIntro}</p>
             </div>
 
-            <div className="hero-spline-frame" aria-hidden="true">
+            <div className="hero-spline-frame">
               <div className="hero-spline-shell">
                 <div className="hero-spline-shell__fallback" />
+                <SplineScene
+                  scene="/spline/hero.splinecode"
+                  className="hero-spline-shell__viewer"
+                  label="hero.splinecode"
+                  showControl
+                />
               </div>
             </div>
 

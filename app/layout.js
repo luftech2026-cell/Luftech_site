@@ -1,5 +1,6 @@
 import "./globals.css";
 import PrivacyCenter from "../components/privacy-center";
+import SplineScene from "../components/spline-scene";
 import { siteIdentity } from "../lib/site-content";
 
 export const dynamic = "force-dynamic";
@@ -43,6 +44,11 @@ export default function RootLayout({ children }) {
       <body>
         <div className="site-spline-background" aria-hidden="true">
           <div className="site-spline-background__fallback" />
+          <SplineScene
+            scene="/spline/background.splinecode"
+            className="site-spline-background__viewer"
+            label="background.splinecode"
+          />
         </div>
         <div className="site-shell">{children}</div>
         <PrivacyCenter />

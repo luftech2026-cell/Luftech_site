@@ -8,8 +8,8 @@ export function proxy(request) {
   const nonce = createNonce();
   const isDevelopment = process.env.NODE_ENV === "development";
   const scriptPolicy = isDevelopment
-    ? `'self' 'nonce-${nonce}' 'strict-dynamic' 'unsafe-eval'`
-    : `'self' 'nonce-${nonce}' 'strict-dynamic'`;
+    ? `'self' 'nonce-${nonce}' 'strict-dynamic' 'unsafe-eval' 'wasm-unsafe-eval'`
+    : `'self' 'nonce-${nonce}' 'strict-dynamic' 'wasm-unsafe-eval'`;
   const contentSecurityPolicy = [
     "default-src 'self'",
     `script-src ${scriptPolicy}`,
@@ -18,7 +18,10 @@ export function proxy(request) {
     "font-src 'self' data:",
     "connect-src 'self' blob:",
     "worker-src 'self' blob:",
+    "child-src 'none'",
+    "frame-src 'none'",
     "media-src 'self' blob:",
+    "manifest-src 'self'",
     "object-src 'none'",
     "base-uri 'self'",
     "form-action 'self'",

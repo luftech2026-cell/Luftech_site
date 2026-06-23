@@ -48,6 +48,69 @@ body {
   display: block;
   filter: none;
   transform: scale(1.02);
+  opacity: 0;
+  transition: opacity 420ms ease;
+}
+
+.site-spline-background__viewer[data-spline-status="loaded"] {
+  opacity: 1;
+}
+
+.site-spline-background__viewer > div,
+.site-spline-background__viewer canvas {
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none !important;
+}
+
+.spline-consent-panel {
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+  z-index: 3;
+  display: grid;
+  gap: 10px;
+  width: min(100% - 44px, 360px);
+  padding: 16px;
+  border: 1px solid rgba(127, 226, 191, 0.22);
+  border-radius: 20px;
+  color: #eafff7;
+  background: rgba(7, 17, 29, 0.74);
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(16px);
+}
+
+.spline-consent-panel p {
+  margin: 0;
+  color: rgba(234, 255, 247, 0.86);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.spline-consent-button {
+  min-height: 42px;
+  justify-self: start;
+  padding: 0 16px;
+  border: 1px solid rgba(127, 226, 191, 0.34);
+  border-radius: 999px;
+  color: #07111d;
+  background: #7fe2bf;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.spline-consent-button:hover,
+.spline-consent-button:focus-visible {
+  outline: 3px solid rgba(127, 226, 191, 0.26);
+  outline-offset: 3px;
+}
+
+.spline-consent-panel__meta {
+  color: rgba(234, 255, 247, 0.62);
+  font-size: 11px;
+  line-height: 1.4;
 }
 
 .privacy-center-trigger {
@@ -221,6 +284,13 @@ body {
 
   .privacy-center-links button {
     margin-left: 0;
+  }
+
+  .spline-consent-panel {
+    right: 14px;
+    bottom: 14px;
+    width: calc(100% - 28px);
+    padding: 14px;
   }
 }
 

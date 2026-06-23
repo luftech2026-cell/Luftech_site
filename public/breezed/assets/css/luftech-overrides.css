@@ -331,6 +331,19 @@
 .luftech-page .hero-spline-shell__viewer {
   display: block;
   filter: saturate(1.05) brightness(1);
+  opacity: 0;
+  transition: opacity 420ms ease;
+}
+
+.luftech-page .hero-spline-shell__viewer[data-spline-status="loaded"] {
+  opacity: 1;
+}
+
+.luftech-page .hero-spline-shell__viewer > div,
+.luftech-page .hero-spline-shell__viewer canvas {
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none !important;
 }
 
 .luftech-page .hero-actions,
